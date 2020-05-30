@@ -11,4 +11,4 @@ The data is written to `samples.csv`
 
 ## Learning with NN_GRISE
 
-Learning is done using Tensorflow. This is best doen on a GPU. Testing was done on a GTX 1050.
+Learning is done using Tensorflow. This is best done on a GPU. Testing was done on a GTX 1050.
