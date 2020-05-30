@@ -11,6 +11,8 @@ import Statistics: mean
 
 
 
+
+
 mutable struct FactorGraph{}
     order_list::Array{Int64,1}
     variable_count::Int
@@ -187,4 +189,15 @@ if cent
     return E
     end
 
+end
+
+
+function pth_order_tensor(r)
+    a =  Tuple([2 for i in 1:r])
+    M =  zeros(a)
+    for i in CartesianIndices(M)
+        s = prod(2*[Tuple(i)...] .- 3)
+        M[i] = s
+    end
+    return M
 end
