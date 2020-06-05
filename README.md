@@ -13,4 +13,10 @@ The data is written to `samples.csv`
 
 ## Learning with NN_GRISE
 
-Learning is done using Tensorflow. This is best done on a GPU. Testing was done on a GTX 1050. 
+Learning is done using Tensorflow. This is best done on a GPU. Testing was done on a GTX 1050.
+
+Run `learn.py` to run NN-GRISE on the saved samples. This script will learn, sample and calulate the error in TV and display it
+
+The hyperparamters of NN-GRISE can be changed in this scipt.
+
+## Stucture Learning
