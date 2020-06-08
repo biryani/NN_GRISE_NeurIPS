@@ -15,8 +15,13 @@ The data is written to `samples.csv`
 
 Learning is done using Tensorflow. This is best done on a GPU. Testing was done on a GTX 1050.
 
-Run `learn.py` to run NN-GRISE on the saved samples. This script will learn, sample and calulate the error in TV and display it
+Run `learn.py` to do NN-GRISE on the saved samples. This script will learn, sample and calulate the error in TV and display it
 
-The hyperparamters of NN-GRISE can be changed in this scipt.
+The hyperparamters of NN-GRISE model can be changed in this scipt.
 
 ## Stucture Learning
+
+The code demonstrating structure learning is inside the `Strucutre Learning` folder. This is a jupyter notebook learning the fifth order model discussed in the supplementary material. Running this requires the NetworkX python library [1].
+
+
+[1] Hagberg, Aric, Pieter Swart, and Daniel S Chult. Exploring network structure, dynamics, and function using NetworkX. No. LA-UR-08-05495; LA-UR-08-5495. Los Alamos National Lab.(LANL), Los Alamos, NM (United States), 2008.
