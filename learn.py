@@ -20,7 +20,7 @@ samples =  np.loadtxt( "samples.csv" ).T
 samples_test = np.loadtxt( "samples_test.csv" ).T
 N=samples.shape[1]
 N_samples = 10**6
-print("(n,p) = ",(N , N_samples))
+
 
 
 
@@ -44,7 +44,7 @@ H = train_NN_ising(samples, model, epochs = 100, batch_size=2000, eta = schedule
 
 
 print("Training done! Sampling from the learned model")
-NN_samples = NN_MCMC(H, N)
+NN_samples = NN_MCMC(H, N_samples)
 
 ns_list = [4*10**4, 10**5, 4*10**5, 10**6]
 base_line = []
