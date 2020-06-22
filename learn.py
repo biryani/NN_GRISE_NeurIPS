@@ -44,7 +44,7 @@ H = train_NN_ising(samples, model, epochs = 100, batch_size=2000, eta = schedule
 
 
 print("Training done! Sampling from the learned model")
-NN_samples = NN_MCMC(H, N_samples)
+NN_samples = NN_MCMC(H,N, N_samples)
 
 ns_list = [4*10**4, 10**5, 4*10**5, 10**6]
 base_line = []
